@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  background: #cdd8e3; /* фон сцены — нет вспышки до загрузки */
+  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+.stage {
+  position: fixed;
+  inset: 0;
+}
+
+.loader {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  color: #1d2733;
+  font: 700 18px system-ui;
+  pointer-events: none;
+}
+
+.setup {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  color: #1d2733;
+}
+
+.setup > div {
+  max-width: 560px;
+  background: #fff;
+  border-radius: 22px;
+  padding: 28px 34px;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.25);
+  line-height: 1.5;
+}
+
+.setup code {
+  background: #eef2f6;
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+
+.spline-credit {
+  position: fixed;
+  right: 12px;
+  bottom: 8px;
+  margin: 0;
+  font: 600 12px system-ui;
+  z-index: 5;
+}
+
+.spline-credit a {
+  color: rgba(29, 39, 51, 0.6);
+  text-decoration: none;
+}
